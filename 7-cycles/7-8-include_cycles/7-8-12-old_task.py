@@ -3,10 +3,32 @@ clear = lambda: os.system('cls')
 clear()
 
 total = 0
-for bik in range(1, 100):
-    for korov in range(1, 100):
-        for telen in range(1, 100):
-            if 10 * bik + 5 * korov + 0.5 * telen == 100 and bik+korov+telen == 100:
-                total += 1
-                print('bik =', bik, 'korov =', korov, 'telen =', telen)
-print('Общее количество натуральных решений =', total)
+a = 1
+b = 1
+c = 1
+d = 1
+e = 1
+
+for a in range(1, 151):
+    if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
+        print(a + b + c + d + e)
+        break
+    for b in range(a, 151):
+        if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
+            print(a + b + c + d + e)
+            break
+        for c in range(b, 151):
+            if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
+                print(a + b + c + d + e)
+                break
+            for d in range(c, 151):
+                if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
+                    print(a + b + c + d + e)
+                    break
+                for e in range(d, 151):
+                    print(a,b,c,d,e)
+                    # print(a ** 5, '+', b ** 5, '+', c ** 5, '+', d ** 5, '==', e ** 5)
+                    #print(a ** 5 + b ** 5 + c ** 5 + d ** 5, '==', e ** 5, '     ', a ** 5, '+', b ** 5, '+', c ** 5, '+', d ** 5, '==', e ** 5)
+                    if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
+                        print(a + b + c + d + e)
+                        break
