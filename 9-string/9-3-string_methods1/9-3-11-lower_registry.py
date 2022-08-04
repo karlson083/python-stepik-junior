@@ -4,10 +4,17 @@ clear()
 
 
 #s = input()
-s = 'оыралоывало хоРОШ выарлво83кг834'
+s = 'abcABCD12345'
 
 s2 = s.upper()
+count = 0
+for i in range(len(s)):
+    if s[i] != s2[i]:
+        count += 1
+print(count)
 
-for 
-
-
+s, counter = input(), 0
+for i in s:
+    if i != i.upper():  # условие выполняется только для букв в нижнем регистре
+        counter += 1
+print(counter)
