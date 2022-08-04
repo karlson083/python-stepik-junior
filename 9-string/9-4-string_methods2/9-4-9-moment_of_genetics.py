@@ -3,5 +3,9 @@ clear = lambda: os.system('cls')
 clear()
 
 #s = input()
-s = 'In 2010, someone paid 10k Bitcoin for two pizzas.'
-print(s.count(" ") + 1)
+s = 'АааГГЦЦцТТттт'
+s = s.lower()
+print('Аденин:', s.count('а'))
+print('Гуанин:', s.count('г'))
+print('Цитозин:', s.count('ц'))
+print('Тимин:', s.count('т'))
