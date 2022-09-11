@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 11-4-display-list
 import os
 clear = lambda: os.system('cls')
 clear()
