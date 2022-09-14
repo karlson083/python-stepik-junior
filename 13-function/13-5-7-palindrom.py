@@ -8,10 +8,9 @@ clear()
 def is_palindrome(text):
     
     txt_tmp = ''.join([i for i in text if i.isalpha()])
-    if  txt_tmp.upper() == txt_tmp[::-1].upper():
-        return True
-    else:
-        return False
+    return txt_tmp.upper() == txt_tmp[::-1].upper()
+    
+   
     
 # считываем данные
 txt = input()
