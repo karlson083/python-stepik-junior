@@ -5,15 +5,16 @@ clear = lambda: os.system('cls')
 clear()
 
 
-from math import pi
 # объявление функции
-def get_circle(radius):
-    return 2 * pi * radius, pi * radius ** 2
-    
+def solve(a, b, c):
+    d = b**2-4*a*c
+    x1 = (-b - d ** 0.5) / (2*a)
+    x2 = (-b + d ** 0.5) / (2*a)
+    return min(x1, x2), max(x1, x2)
 
 # считываем данные
-r = float(input())
+a, b, c = int(input()), int(input()), int(input())
 
 # вызываем функцию
-length, square = get_circle(r)
-print(length, square)
+x1, x2 = solve(a, b, c)
+print(x1, x2)
