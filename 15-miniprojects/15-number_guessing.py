@@ -33,7 +33,15 @@ while 1:
         print('Ваше число больше загаданного, попробуйте еще разок')
     elif i == rndx:
         print('Вы угадали, за',count_try,'попыток поздравляем!')
-        break
+        answer = input('Хотите сыграть еще раз? да, нет.')
+        while answer not in ['да', 'нет']:
+            print('Вы ввели неверно введите да или нет')
+            answer = input('Хотите сыграть еще раз? да, нет.')
+        if answer == 'да':
+            count_try = 0
+            rndx = random.randint(1,100)
+        elif answer == 'нет':
+            break
 print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
 
 
