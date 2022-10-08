@@ -1,5 +1,7 @@
-x = 'Приходите ещё в наш магазин!'
-y = 'Ваша покупка: Молоко стоимостью 60р.'
-for i in range(len(x)):
-    if x[i] != y[i]:
-        print(i,x,y)
+def do_something():
+  a = 1
+  print(a)
+
+a = 0
+do_something()
+print(a)
