@@ -19,7 +19,7 @@ is_lower_letters = bool(int(input('Включать ли строчные бук
 is_punctuation = bool(int(input('Включать ли символы !#$%&*+-=?@^_? 1,0: ')))
 is_on_bad_chairs = bool(int(input('Исключать ли неоднозначные символы il1Lo0O? 1,0: ')))
 
-print(is_digit,is_upper_leeters,is_lower_letters,is_punctuation,is_on_bad_chairs)
+#print(is_digit,is_upper_leeters,is_lower_letters,is_punctuation,is_on_bad_chairs)
 
 if is_digit:
     chars += DIGITS
@@ -33,7 +33,7 @@ if is_on_bad_chairs:
     for i in BAD_CHAIRS:
         if chars.find(i) != -1:
             chars = chars[:chars.find(i)] + chars[chars.find(i)+1:]
-print(chars)
+#print(chars)
 
 def generate_password(lenthf,chairsf):
     pass_out = ''
