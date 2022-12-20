@@ -7,9 +7,7 @@ text = 'Sgd fqzrr hr zkvzxr fqddmdq nm sgd nsgdq rhcd ne sgd edmbd.'
 #diff = -25
 text_list = text.split()
 
-for i in text_list:
-    print(i,len(i))
-print(text_list) 
+
 def decode(text,diff):
     if diff > 0:
         for i in text:
@@ -31,10 +29,9 @@ def decode(text,diff):
         print(text)
 pass
 
-for i in range(0,-26,-1):
-    print(i, end = ' ')
-    decode('Hawnj pk swhg xabkna ukq nqj.',i)
-    print()
+for i in text_list:
+    decode(i,len(i))
+    print(' ',end ='')
 
 
 
