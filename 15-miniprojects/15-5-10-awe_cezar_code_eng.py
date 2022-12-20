@@ -3,8 +3,8 @@ import os
 clear = lambda: os.system('cls')
 clear()
 
-text = 'Sgd fqzrr hr zkvzxr fqddmdq nm sgd nsgdq rhcd ne sgd edmbd.'
-#diff = -25
+#text = 'Day, mice. "Year" is a mistake!'
+text = input()
 text_list = text.split()
 
 
@@ -30,7 +30,7 @@ def decode(text,diff):
 pass
 
 for i in text_list:
-    decode(i,len(i))
+    decode(i,len(i.strip('",()?:;.!/'"'")))
     print(' ',end ='')
 
 
